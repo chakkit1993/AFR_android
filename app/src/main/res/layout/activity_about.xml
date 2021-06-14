@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        app:cardBackgroundColor="@android:color/holo_orange_dark"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_card_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xenosphere"
+                android:text="About"
+                android:textSize="30dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                app:srcCompat="@drawable/logo_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+            <TextView
+                android:id="@+id/textView_card_about1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ANT TECH 2017 CO., LTD.  Head Office"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/textView_card_about2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="91/1346-7 Soi Ramintra 44, Ramintra Rd., Klong Kum  Subdistrict, Bueng Kum District, Bangkok 10230"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="22dp" />
+            <TextView
+                android:id="@+id/textView_card_about3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="chakkit.sa@apitech.co.th Tel: (+66) 092-6254482 , 085-4802532"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="22dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

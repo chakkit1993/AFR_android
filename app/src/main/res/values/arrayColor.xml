@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="colorsLineChart">
+        <item>@color/colorLineChart_1</item>
+        <item>@color/colorLineChart_2</item>
+        <item>@color/colorLineChart_3</item>
+        <item>@color/colorLineChart_4</item>
+        <item>@color/colorLineChart_5</item>
+        <item>@color/colorLineChart_6</item>
+        <item>@color/colorLineChart_7</item>
+        <item>@color/colorLineChart_8</item>
+    </array>
+
+</resources>

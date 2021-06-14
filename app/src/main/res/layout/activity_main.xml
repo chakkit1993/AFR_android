@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg01"
+    android:keepScreenOn="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status : Not Conect"
+            android:textColor="@color/cardview_light_background" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/textStatusMachine"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Machine : Idle"-->
+<!--            android:textColor="@color/cardview_light_background" />-->
+
+        <Button
+            android:id="@+id/btn_onSend"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Button"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/card_Count"-->
+<!--        android:layout_width="330dp"-->
+<!--        android:layout_height="120dp"-->
+<!--        android:layout_alignEnd="@+id/gauge1"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginBottom="190dp"-->
+<!--        android:visibility="invisible"-->
+<!--        app:cardBackgroundColor="#000000"-->
+<!--        gauge:cardCornerRadius="5dp"-->
+<!--        gauge:cardElevation="100dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+
+<!--            android:layout_margin="5dp"-->
+<!--            android:background="@color/cardview_shadow_end_color"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_countdown"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/xenosphere"-->
+<!--                android:text="START"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textColor="@color/colorAccent"-->
+<!--                android:textSize="70dp" />-->
+<!--        </LinearLayout>-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view12"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/card_view11"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#FF7700"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@android:color/black"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_card_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AFR"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:id="@+id/textView_card_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xenosphere"
+                android:text="20.0"
+                android:textAlignment="center"
+                android:textColor="#FF7700"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view10"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/card_view12"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#4CAF50"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_margin="5dp"
+            android:background="@android:color/black"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_card_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Battery"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:id="@+id/textView_card_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xenosphere"
+                android:text="20.0"
+                android:textAlignment="center"
+                android:textColor="#4CAF50"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view11"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/bar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@android:color/holo_blue_dark"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="#000000"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_card_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lambda"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light" />
+
+            <TextView
+                android:id="@+id/textView_card_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/xenosphere"
+                android:text="20.0"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.apitech.lambda_sensor.Gauge
+        android:id="@+id/gauge1"
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="79dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.75"
+        app:totalNicks="220"
+        gauge:faceColor="@color/black"
+        gauge:labelTextSize="22"
+        gauge:lowerText="Radio"
+        gauge:maxValue="20"
+        gauge:minValue="8"
+        gauge:needleColor="@color/red"
+        gauge:needleShadow="true"
+        gauge:scaleColor="@color/scaleColor"
+        gauge:upperText="AFR"
+        app:arcColorEnable="true"
+        gauge:valuePerNick=".1">
+
+    </com.apitech.lambda_sensor.Gauge>
+
+    <com.apitech.lambda_sensor.Gauge
+        android:id="@+id/gauge2"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="-135dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/gauge1"
+        android:layout_weight="0.75"
+        app:totalNicks="150"
+        gauge:faceColor="@color/black"
+        gauge:intScale="false"
+        gauge:labelTextSize="12"
+        gauge:lowerText=""
+        gauge:maxValue="2"
+        gauge:minValue="0"
+        gauge:scaleColor="@color/blue_dark"
+        gauge:upperText="Lambda"
+        gauge:valuePerNick="0.02">
+
+    </com.apitech.lambda_sensor.Gauge>
+
+    <!--    <com.example.api_lamdasensor.Gauge-->
+    <!--        android:id="@+id/gauge2"-->
+    <!--        android:layout_width="120dp"-->
+    <!--        android:layout_height="120dp"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:layout_marginEnd="0dp"-->
+    <!--        android:layout_marginBottom="0dp"-->
+    <!--        android:layout_toStartOf="@+id/gauge3"-->
+    <!--        android:layout_weight="0.75"-->
+    <!--        app:lowerText="*C"-->
+    <!--        gauge:faceColor="@color/anthracite"-->
+    <!--        gauge:labelTextSize="12"-->
+    <!--        gauge:maxValue="80"-->
+    <!--        gauge:minValue="0"-->
+    <!--        gauge:scaleColor="@color/colorAccent"-->
+    <!--        gauge:totalNicks="60"-->
+    <!--        gauge:upperText="TEMP"-->
+    <!--        app:majorNickInterval="5"-->
+    <!--        gauge:valuePerNick="2">-->
+
+    <!--    </com.example.api_lamdasensor.Gauge>-->
+
+    <com.apitech.lambda_sensor.Gauge
+        android:id="@+id/gauge3"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_alignEnd="@+id/gauge1"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_weight="0.75"
+        app:lowerText="Volt"
+        app:minValue="0"
+        app:maxValue="20"
+        app:totalNicks="150"
+        app:upperText="Battery"
+        app:valuePerNick="0.2"
+        gauge:faceColor="@color/black"
+        gauge:labelTextSize="12"
+        gauge:scaleColor="@color/green_dark"
+        >
+
+    </com.apitech.lambda_sensor.Gauge>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/bar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="10dp"
+        gauge:srcCompat="@drawable/logo_main" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gauge3"
+        android:layout_marginStart="-90dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="25dp"
+        android:layout_toEndOf="@+id/gauge1"
+        android:text="LEAN"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="@color/yellow"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gauge2"
+        android:layout_marginEnd="-10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toStartOf="@+id/gauge1"
+        android:text="RICH" />
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/card_view16"-->
+    <!--        android:layout_width="130dp"-->
+    <!--        android:layout_height="40dp"-->
+    <!--        app:cardBackgroundColor="#660000"-->
+
+    <!--        android:layout_alignEnd="@+id/gauge1"-->
+    <!--        android:layout_alignBottom="@+id/gauge1"-->
+    <!--        android:layout_marginEnd="110dp"-->
+    <!--        android:layout_marginBottom="65dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_marginTop="3dp"-->
+    <!--            android:layout_marginRight="3dp"-->
+    <!--            android:layout_marginLeft="3dp"-->
+    <!--            android:layout_marginBottom="3dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_db_gauge1"-->
+
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="#000000"-->
+    <!--                android:fontFamily="@font/xenosphere"-->
+    <!--                android:text="99999"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textColor="@android:color/holo_red_dark"-->
+    <!--                android:textSize="28sp" />-->
+    <!--        </LinearLayout>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/card_view17"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="20dp"-->
+    <!--        app:cardBackgroundColor="#660000"-->
+    <!--        android:layout_alignEnd="@+id/gauge4"-->
+    <!--        android:layout_alignBottom="@+id/gauge4"-->
+    <!--        android:layout_marginEnd="48dp"-->
+    <!--        android:layout_marginBottom="20dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_db_gauge3"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="#000000"-->
+    <!--                android:fontFamily="@font/xenosphere"-->
+    <!--                android:text="9999"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textColor="@android:color/holo_red_dark"-->
+    <!--                android:textSize="12sp" />-->
+    <!--        </LinearLayout>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/card_view18"-->
+    <!--        android:layout_width="50dp"-->
+    <!--        android:layout_height="20dp"-->
+    <!--        app:cardBackgroundColor="#660000"-->
+    <!--        android:layout_alignEnd="@+id/gauge3"-->
+    <!--        android:layout_alignBottom="@+id/gauge3"-->
+    <!--        android:layout_marginEnd="48dp"-->
+    <!--        android:layout_marginBottom="20dp">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_margin="2dp"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tv_db_gauge2"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="#000000"-->
+    <!--                android:fontFamily="@font/xenosphere"-->
+    <!--                android:text="9999"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textColor="@android:color/holo_red_dark"-->
+    <!--                android:textSize="12sp" />-->
+    <!--        </LinearLayout>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/img_startButton"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:clickable="true"-->
+<!--        android:visibility="invisible"-->
+<!--        gauge:srcCompat="@drawable/button_start" />-->
+</RelativeLayout>

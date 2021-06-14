@@ -1,0 +1,79 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="GaugeView">
+        <attr name="showOuterShadow" format="boolean" />
+        <attr name="showOuterBorder" format="boolean" />
+        <attr name="showOuterRim" format="boolean" />
+        <attr name="showInnerRim" format="boolean" />
+        <attr name="showNeedle" format="boolean" />
+        <attr name="showScale" format="boolean" />
+        <attr name="showRanges" format="boolean" />
+        <attr name="showRangeText" format="boolean" />
+
+        <attr name="outerShadowWidth" format="float" />
+        <attr name="outerBorderWidth" format="float" />
+        <attr name="outerRimWidth" format="float" />
+        <attr name="innerRimWidth" format="float" />
+        <attr name="innerRimBorderWidth" format="float" />
+        <attr name="needleWidth" format="float" />
+        <attr name="needleHeight" format="float" />
+
+        <attr name="scalePosition" format="float" />
+        <attr name="scaleStartValue" format="float" />
+        <attr name="scaleEndValue" format="float" />
+        <attr name="scaleStartAngle" format="float" />
+        <attr name="scaleEndAngle" format="float" />
+
+        <attr name="divisions" format="integer" />
+        <attr name="subdivisions" format="integer" />
+
+        <attr name="rangeValues" format="reference" />
+        <attr name="rangeColors" format="reference" />
+
+        <attr name="textValue" format="string|reference" />
+        <attr name="textValueColor" format="color" />
+        <attr name="textValueSize" format="float" />
+        <attr name="textUnit" format="string|reference" />
+        <attr name="textUnitColor" format="color" />
+        <attr name="textUnitSize" format="float" />
+        <attr name="textShadowColor" format="color" />
+
+        <attr name="innerCircleColor" format="color" />
+        <attr name="outerCircleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="Gauge">
+        <attr name="totalNicks" format="integer" />
+        <attr name="valuePerNick" format="float" />
+        <attr name="majorNickInterval" format="integer" />
+        <attr name="minValue" format="float" />
+        <attr name="maxValue" format="float" />
+        <attr name="intScale" format="boolean" />
+        <attr name="initialValue" format="float" />
+        <attr name="labelTextSize" format="float" />
+        <attr name="faceColor" format="integer" />
+        <attr name="scaleColor" format="integer" />
+        <attr name="needleShadow" format="boolean" />
+        <attr name="needleColor" format="integer" />
+        <attr name="textSize" format="float" />
+        <attr name="upperText" format="string" />
+        <attr name="lowerText" format="string" />
+        <attr name="upperTextSize" format="float" />
+        <attr name="lowerTextSize" format="float" />
+        <attr name="arcColorEnable" format="boolean" />
+    </declare-styleable>
+
+
+
+</resources>
